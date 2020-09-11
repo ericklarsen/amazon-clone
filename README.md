@@ -1,2 +1,2 @@
 ## Amazon Clone!
-This is amazon clone that i've made. https://ericklarsen.github.io/amazon-clone/
+This is an amazon clone i made. https://ericklarsen.github.io/amazon-clone/
