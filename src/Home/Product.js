@@ -3,7 +3,7 @@ import { ProductWrap } from './ProductSty'
 import { useStateValue } from '../StateProvider'
 
 function Product({ id, title, image, price, rating }) {
-    const [{}, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
 
     const addToBasket = () =>{
         // Add item to basket ...
@@ -30,8 +30,8 @@ function Product({ id, title, image, price, rating }) {
                     {
                         Array(rating)
                             .fill()
-                            .map((_) => (
-                                <span role="img" aria-label="donut">⭐</span>
+                            .map((_,i) => (
+                                <span key = {i} role="img" aria-label="donut">⭐</span>
                             ))
                     }
                 </div>

@@ -3,7 +3,7 @@ import { CheckoutProductWrap } from './CheckoutSty'
 import { useStateValue } from '../StateProvider'
 
 function CheckoutProduct({ item }) {
-    const [{basket}, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
     const removeFromBasket = () =>{
         // remove item from basket
         dispatch({

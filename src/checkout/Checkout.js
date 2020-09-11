@@ -22,9 +22,9 @@ function Checkout() {
                 ) : (
                         <div>
                             <h2 className="checkout__title">Your shopping basket</h2>
-                            {basket?.map(item => (
+                            {basket?.map((item, i) => (
                                 <CheckoutProduct
-                                    key={item.id}
+                                    key={i}
                                     item={item} />
                             ))}
                         </div>
