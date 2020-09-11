@@ -7,10 +7,9 @@ import { useStateValue } from '../StateProvider'
 
 function Header() {
     const [{basket}] = useStateValue();
-    console.log (basket);
     return (
         <HeaderWrap className="header">
-            <Link to="/login">
+            <Link to="/">
                 <img className="header__logo" alt="amazon logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" />
             </Link>
             <div className="header__search">
