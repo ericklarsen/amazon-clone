@@ -6,7 +6,7 @@ export const HeaderWrap = styled.nav`
     align-items : center;
     position : sticky;
     width : 100%;
-    top : 0;
+    top : -1px;
     z-index : 100;
     
     .header__logo{
